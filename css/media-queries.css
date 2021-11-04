@@ -39,8 +39,8 @@ h1 {
     color: #000000;
     text-decoration: none;
 }
-@media only screen and (max-width: 960px) {
-    .nav-links > li {
+@media only screen and (max-width: 576px) {
+    .nav-links  li {
         display: flex;
         background-color: #d3d3d3;
         margin-bottom: .5em;
@@ -50,16 +50,18 @@ h1 {
         list-style: none;
     }
 }
-.nav-links {
-    list-style: none;
-    box-sizing: border-box;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-
-    /*text-align: center;*/
+@media only screen and (min-width: 576px) {
+    .nav-links {
+        list-style: none;
+        box-sizing: border-box;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        float: right;
+        padding: 1em;
+        /*text-align: center;*/
+    }
 }
-
 .header-img img{
     width: 100%;
     padding-top: .5em;
@@ -74,17 +76,18 @@ footer > p {
 }
 
 #social-media-links li{
+    background-color: transparent;
     list-style: none;
     float: left;
     letter-spacing: 1em;
 }
-
-.icons {
-    width: 40px;
-    height: 40px;
-    padding: 0 5px;
+@media screen and (min-width: 768px) {
+    .icons {
+        width: 40px;
+        height: 40px;
+        padding: 0 5px;
+    }
 }
-
 @media only screen and (min-width: 576px) {
     .hidden-on-desktop{display:none;}
 }
