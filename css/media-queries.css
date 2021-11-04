@@ -1,1 +1,61 @@
+body{
+    margin: 0px;
+    padding: 15px;
+}
+
+.nav {
+    font-family: sans-serif;
+    padding: 0;
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    display: flex;
+
+
+}
+
+.nav-links   {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.nav-links>li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden-on-desktop{
+    display: none;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+    padding: 0 5px;
+}
+
+h1  {
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+h2   {
+    font-family: sans-serif;
+    display: flex;
+    flex-flow: nowrap;
+
+}
+
+p   {
+    display: flex;
+}
+
+
+@media screen and (min-width:960px) and (max-width:1200px) {
+    /* ... */
+}
 
